@@ -1,0 +1,476 @@
+.chatBoxContainer{
+    /* background-color: rgb(240, 235, 235); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+}
+
+.chatBoxContainer .left{
+    width: 200px;
+    min-height: 100%;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.chatBoxContainer .middleContainer{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background-color: #33475B;
+    width: 400px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer{
+    /* height: calc(100% - 60px); */
+    background-color: #d5d6da;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .introQues{
+    display: flex;
+    background-color: #d5d6da;
+    gap: 12px;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .introQues .ques{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 220px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .introQues img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .introQues .ques p{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    background-color: white;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .heading{
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    width: 300px;
+    font-size: 12px;
+    color: #020617;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos{
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    font-size: 12px;
+    flex-direction: column;
+
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos .labelVal{
+    border-bottom: 1px solid rgb(206, 200, 200);
+    color: #020617;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos .labelName{
+    font-weight: 500;
+    color: #505050;
+    padding: 10px 0px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos p{
+    font-size: 12px;
+    color: white;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos .btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .userIntro .infoContainer .infos .btnDiv button{
+    padding: 14px 28px;
+    background-color: #184E7F;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .inpBox{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .inpBox input{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.chatBoxContainer .middleContainer .chatContainer .mssgsContainer .inpBox .sendIcon{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.chatBoxContainer .middleContainer .downContainer{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.chatBoxContainer .middleContainer .downContainer img{
+    position: absolute;
+    top: -15px;
+}
+
+.chatBoxContainer .middleContainer .downContainer .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chatBoxContainer .middleContainer .downContainer .content .crossIcon{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.chatBoxContainer .middleContainer .downContainer .content .help{
+    padding: 0px 10px 10px 10px;
+}
+
+.chatBoxContainer .rightContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chatBoxContainer .rightContainer .headerContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 20px 0px 10px 0px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.chatBoxContainer .rightContainer .headerContainer p{
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .headerContainer .colors{
+    width: 300px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .headerContainer .colors .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #184E7F;
+    border: 1px solid rgb(17, 17, 17);
+}
+
+.chatBoxContainer .rightContainer .headerContainer .selectedClrContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .headerContainer .selectedClrContainer .square{
+    width: 40px;
+    height: 40px;
+    background-color: #33475B;
+    border-radius: 8px;
+}
+
+.chatBoxContainer .rightContainer .headerContainer .selectedClrContainer .colorId{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.chatBoxContainer .rightContainer .customContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.chatBoxContainer .rightContainer .customContainer p{
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .customContainer .colors{
+    width: 300px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .customContainer .colors .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #184E7F;
+    border: 1px solid black;
+}
+
+.chatBoxContainer .rightContainer .customContainer .selectedClrContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .customContainer .selectedClrContainer .square{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.chatBoxContainer .rightContainer .customContainer .selectedClrContainer .colorId{
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.chatBoxContainer .rightContainer .customMssgContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.chatBoxContainer .rightContainer .customMssgContainer p{
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .customMssgContainer .mssgs{
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 4px;
+    flex-direction: column;
+}
+
+.chatBoxContainer .rightContainer .customMssgContainer .mssgs .mssg{
+    width: 220px;
+    background-color: #F6F7F5;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0px 8px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.chatBoxContainer .rightContainer .customMssgContainer .mssgs .mssg img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.chatBoxContainer .rightContainer .userIntro{
+    color: black;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    flex-direction: column;
+    margin: 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .heading{
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    width: 300px;
+    font-size: 12px;
+    color: #020617;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos{
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    font-size: 12px;
+    flex-direction: column;
+
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos .labelVal{
+    border-bottom: 1px solid rgb(206, 200, 200);
+    color: #020617;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos .labelName{
+    font-weight: 500;
+    color: #505050;
+    padding: 10px 0px;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos p{
+    font-size: 12px;
+    color: white;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos .btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatBoxContainer .rightContainer .userIntro .infoContainer .infos .btnDiv button{
+    padding: 14px 28px;
+    background-color: #184E7F;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    border-radius: 8px;
+    width: 220px;
+    cursor: pointer;
+}
+
+.chatBoxContainer .rightContainer .welcomeContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0px 20px 0px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.chatBoxContainer .rightContainer .welcomeContainer p{
+    padding: 10px 4px;
+}
+
+.chatBoxContainer .rightContainer .welcomeContainer .mssg{
+    width: 500px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 4px;
+    font-size: 12px;
+}
+
+.chatBoxContainer .rightContainer .welcomeContainer .mssg{
+    width: 280px;
+    background-color: #F6F7F5;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0px 8px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.chatBoxContainer .rightContainer .welcomeContainer .mssg img{
+    width: 20px;
+    height: 20px;
+}
+
+.chatBoxContainer .rightContainer .saveChanges{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.chatBoxContainer .rightContainer .saveChanges button{
+    padding: 10px 4px;
+    margin-bottom: 10px;
+    background-color: #184E7F;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+} 

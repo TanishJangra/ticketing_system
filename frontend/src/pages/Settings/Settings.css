@@ -1,0 +1,94 @@
+.settingsContainer{
+    /* background-color: rgb(240, 235, 235); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settingsContainer .header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.settingsContainer .settingsBox{
+    /* background-color: rgb(237, 230, 230); */
+    padding: 4px;
+    width: 98%;
+}
+
+.settingsContainer .settingsBox .head{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.settingsContainer .settingsBox .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.settingsContainer .settingsBox .form form .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.settingsContainer .settingsBox .form form .inputBox input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.settingsContainer .settingsBox .form form .inputBox input:focus{
+    outline: none;
+}
+
+.settingsContainer .settingsBox .form form .inputBox label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.settingsContainer .settingsBox .form form .saveBtn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.settingsContainer .settingsBox .form form .saveBtn button{
+    width: 200px;
+    height: 40px;
+    background-color: #184E7F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.settingsContainer .settingsBox .form form .saveBtn button:hover{
+    background-color: #0E3A6D;
+}
+.settingsContainer .settingsBox .form form .saveBtn button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}

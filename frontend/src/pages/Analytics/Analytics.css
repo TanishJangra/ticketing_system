@@ -1,0 +1,83 @@
+.analyticsContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.analyticsContainer .header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.analyticsContainer .graphContainer{
+    width: 702px;
+    height: 408px;
+    padding: 20px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.analyticsContainer .graphContainer .heading{
+    color: green;
+}
+
+.analyticsContainer .secondCont{
+    width: 700px;
+    padding: 10px;
+}
+
+.analyticsContainer .secondCont .head{
+    color: green;
+}
+
+.analyticsContainer .secondCont .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+.analyticsContainer .secondCont .content .secs{
+    white-space: nowrap;
+}
+
+.analyticsContainer .thirdCont{
+    width: 700px;
+    padding: 10px;
+}
+
+.analyticsContainer .thirdCont .head{
+    color: green;
+}
+
+.analyticsContainer .thirdCont .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+.analyticsContainer .fourthCont{
+    width: 700px;
+    padding: 10px;
+}
+
+.analyticsContainer .fourthCont .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+

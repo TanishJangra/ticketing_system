@@ -1,0 +1,168 @@
+.AdminDashboardContainer{
+    /* background-color: rgb(240, 235, 235); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.AdminDashboardContainer .header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.AdminDashboardContainer .searchBox{
+    position: relative;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.AdminDashboardContainer .searchBox input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .AdminDashboardContainer .searchBox input:focus{
+    outline: none;
+  }
+  
+  .AdminDashboardContainer .searchBox .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .AdminDashboardContainer .ticketsLists{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    padding-left: 20px;
+    gap: 8px;
+  }
+
+  .AdminDashboardContainer .ticketsLists ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+  }
+
+  .AdminDashboardContainer .ticketsLists ul li{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+
+    .AdminDashboardContainer .ticketDiv{
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 20px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket{
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgb(163, 160, 160);
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .ticketId{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .ticketId .postedTime{
+        color: gray;
+        font-size: 12px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .ticketId .ticketIdDetails{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .ticketId .ticketIdDetails .circle{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .ticketMssgDetails{
+        padding: 12px 0px;
+        border-bottom: 1px solid #c5c0c0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .bottomDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4px 0px;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .bottomDiv .userInfo p{
+        font-size: 12px;
+        color: gray;
+    }
+
+    .AdminDashboardContainer .ticketDiv .ticket .bottomDiv .openTicket{
+        margin-right: 20px;
+    }
+
+    .AdminDashboardContainer .ticketsLists ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding-left: 0;
+      }
+      
+      .AdminDashboardContainer .ticketsLists li {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+      
+      .AdminDashboardContainer .ticketsLists li:hover {
+        background-color: #2d4da3;
+        color: white;
+      }
+      
+      .AdminDashboardContainer .ticketsLists .activeTab {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+      }
+      

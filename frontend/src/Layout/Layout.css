@@ -1,0 +1,10 @@
+.layoutContainer{
+    /* background-color: aqua; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.layoutContainer .layout-content{
+    width: 100%;
+}

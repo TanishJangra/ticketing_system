@@ -1,0 +1,134 @@
+.signUpContainer{
+    /* background-color: red; */
+    display: flex;
+}
+
+.signUpContainer .left{
+    width: 60%;
+}
+
+.signUpContainer .left .topContainer{
+    width: 100%;
+    height: 100px;
+}
+
+.signUpContainer .left .topContainer .top{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.signUpContainer .left .bottomContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.signUpContainer .left .bottomContainer .signUpformContainer{
+    
+    height: 600px;
+    width: 500px;
+    position: relative;
+}
+
+.signUpContainer .left .bottomContainer .signUpformContainer .topHeadContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.signUpContainer .left .bottomContainer .signUpformContainer .topHeadContainer .topHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+    font-weight: 600;
+}
+
+.signUpFormGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.signUpFormGroup input{
+    width: 70%;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+.signUpFormGroup input:focus{
+    outline: none;
+}
+
+.signUpFormGroup label{
+    width: 70%;
+}
+
+.checkboxGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.checkboxGroup .innerDiv{
+    display: flex;
+    width: 70%;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.signUpBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.signUpBtnContainer button{
+    width: 70%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #111111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signUpBtnContainer button:hover{
+    background-color: #333333;
+}
+
+.bottomContent{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+}
+
+.errorMsg{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.successMsg{
+    color: green;
+    font-size: 12px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

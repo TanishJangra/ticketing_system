@@ -1,0 +1,365 @@
+.contactCenterContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contactCenterContainer .firstDiv{
+    /* background-color: rgb(238, 233, 233); */
+    width: 296px;
+    border-right: 1px solid #c6cacd;
+}
+
+.contactCenterContainer .firstDiv .heading{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #6A6B70;
+}
+
+.contactCenterContainer .firstDiv .chats{
+    /* background-color: rgb(229, 229, 235); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px;  
+    color: #888888;
+}
+
+.contactCenterContainer .firstDiv .chats .chatHeading{
+    font-size: 16px;
+    border-bottom: 1px solid #D1D6DA;
+    padding: 10px 0px;
+}
+
+.contactCenterContainer .firstDiv .chats .chatLists{
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.contactCenterContainer .firstDiv .chats .chatLists .chatList{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #e6eaed;
+}
+
+.contactCenterContainer .firstDiv .chats .chatLists .chatList .chatName{
+    color: #5E9BD5;
+}
+
+.contactCenterContainer .firstDiv .chats .chatLists .chatList .lastMsg{
+    color: #9A9B9D;
+}
+
+.contactCenterContainer .midDiv{
+    display: flex;
+    /* background-color: rgb(239, 233, 233); */
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    border-right: 1px solid #c6cacd;
+    position: relative;
+}
+
+.contactCenterContainer .midDiv .topHead{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #D1D6DA;
+    color: #6A6B70;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv{
+    width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv{
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chatInput{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    left: 0;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chatInput input{
+    padding: 4px;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    left: 0;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chatInput button{
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+    height: 20px;
+    width: 20px;
+    /* background-color: #184E7F; */
+    color: rgb(29, 28, 28);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 4px;
+    background-color: rgb(70, 66, 66);
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .resolvedChat p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat .missedChat{
+    color: red;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat .visitorcontactCenter{
+    color: #5E9BD5;
+    display: flex;
+    gap: 10px;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat .admincontactCenter{
+    color: #5E9BD5;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat .chatName{
+    color: #162635;
+}
+
+.contactCenterContainer .midDiv .ticketChatDiv .chatDiv .unresolvedChat .chat .msg{
+    color: #9A9B9D;
+    font-size: 14px;
+}
+
+.lastDiv{
+    flex: 1;
+    padding: 6px;
+    overflow-y: auto;
+}
+
+.lastDiv .top{
+    padding: 6px;
+    color: #6A6B70;
+}
+
+.lastDiv .detailsContainer .details{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #D1D6DA;
+    color: #184E7F;
+}
+
+.lastDiv .detailsContainer .contDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #D1D6DA;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lastDiv .detailsContainer .contDetails .innerDiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #D1D6DA;
+    padding: 6px;
+    border-radius: 12px;
+    color: #7F7F7F;
+}
+
+.lastDiv .teamMatesContainer .heading{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #D1D6DA;
+    color: #184E7F;
+}
+
+.lastDiv .teamMatesContainer .teammatesDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #D1D6DA;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lastDiv .teamMatesContainer .teammatesDetails .innerDiv{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #D1D6DA;
+    padding: 6px;
+    border-radius: 12px;
+    color: #7F7F7F;
+}
+
+.lastDiv .teamMatesContainer .teammatesDetails .innerDiv div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.lastDiv .teamMatesContainer .teammatesDetails .teamMatesList{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+    /* background-color: #e3dede; */
+}
+
+.lastDiv .teamMatesContainer .teammatesDetails .teamMatesList .teamMates{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #D1D6DA;
+    padding: 6px;
+
+}
+
+.ticketStatusList{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+    /* background-color: #e3dede; */
+}
+
+.ticketStatusList .ticketStatus{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #D1D6DA;
+    padding: 6px;
+    border-radius: 12px;
+    color: #7F7F7F;
+    cursor: pointer;
+}
+
+.resolvedPopUp{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+    border: 1px solid #D1D6DA;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.resolvedPopUp .btns{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.resolvedPopUp .btns .cancelBtn{
+    background-color: #D1D6DA;
+    /* color: white; */
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    width: 120px;
+    border: none;
+}
+
+.resolvedPopUp .btns .cancelBtn:hover{
+    background-color: #A6A8AD;
+}
+
+.resolvedPopUp .btns .confirmBtn{
+    background-color: #184E7F;
+    /* color: white; */
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    width: 120px;
+    color: white;
+    transition: background 0.2s;
+    border: none;
+}
+
+.resolvedPopUp .btns .confirmBtn:hover{
+    background-color: #0E3A6D;
+}
+
+.contactCenterContainer .firstDiv .chats .chatLists .chatList.active {
+    background-color: #f0f4ff;
+    border-left: 4px solid #4a90e2;
+    font-weight: 600;
+  }
+  
