@@ -45,14 +45,14 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ticketing-system-usx8.onrender.com/api/auth/login",
         {
           email: loginData.email,
           password: loginData.password,
         }
       );
 
-      if(response.status === 200) {
+      if (response.status === 200) {
         setSuccess("Login successful!");
         setLoginData({ email: "", password: "" });
         navigate("/app/dashboard");
@@ -62,7 +62,6 @@ const Login = () => {
 
       console.log("Login successful:", response.data);
       localStorage.setItem("token", response.data.token);
-
     } catch (error) {
       console.error("Login failed:", error.response?.data || error.message);
       setError("Login failed. Please try again.");
@@ -124,7 +123,6 @@ const Login = () => {
               <div className="content">
                 <p>Don't have an account?</p>
                 <NavLink to="/signup">Sign Up</NavLink>
-
               </div>
             </div>
             <div className="bottomContent">

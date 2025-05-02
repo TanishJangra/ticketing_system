@@ -35,7 +35,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/users/team/${deleteFormData.id}`,
+        `https://ticketing-system-usx8.onrender.com/api/users/team/${deleteFormData.id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ const TeamMembers = () => {
     });
     setShowDeletePopUp(true);
   };
-  const handleDeleteCancel = () => { 
+  const handleDeleteCancel = () => {
     console.log("Delete cancelled");
     setShowDeletePopUp(false);
   };
@@ -75,7 +75,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/users/team/${memberId}`,
+        `https://ticketing-system-usx8.onrender.com/api/users/team/${memberId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ const TeamMembers = () => {
       alert("Team member deleted successfully");
     } catch (error) {
       console.error("Error deleting team member:", error);
-    } 
+    }
   };
 
   const editMember = (member) => {
@@ -122,7 +122,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/users/team/${editFormData.id}`,
+        `https://ticketing-system-usx8.onrender.com/api/users/team/${editFormData.id}`,
         { firstName, lastName, email, designation },
         {
           headers: {
@@ -144,7 +144,7 @@ const TeamMembers = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/users/team",
+          "https://ticketing-system-usx8.onrender.com/api/users/team",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -184,7 +184,7 @@ const TeamMembers = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/team",
+        "https://ticketing-system-usx8.onrender.com/api/users/team",
         { firstName, lastName, email, designation },
         {
           headers: {
@@ -234,7 +234,10 @@ const TeamMembers = () => {
                   >
                     <img src={editIcon} alt="Edit" />
                   </button>
-                  <button className="deleteBtn" onClick={() => handleDeleteClick(member)}>
+                  <button
+                    className="deleteBtn"
+                    onClick={() => handleDeleteClick(member)}
+                  >
                     <img src={deleteIcon} alt="Delete" />
                   </button>
                 </td>
@@ -349,52 +352,50 @@ const TeamMembers = () => {
           </div>
         </div>
       )}
-      {
-        showDeletePopUp && (
-          <div className="popupOverlay">
-            <div className="popupBox">
-              <h2>Delete Team Member</h2>
-              <p>Are you sure you want to delete this team member?</p>
-              <form onSubmit={handleDeleteSubmit}>
-                <label>User Name</label>
-                <input
-                  type="text"
-                  name="userName"
-                  value={deleteFormData.userName}
-                  placeholder="User name"
-                  disabled
-                />
+      {showDeletePopUp && (
+        <div className="popupOverlay">
+          <div className="popupBox">
+            <h2>Delete Team Member</h2>
+            <p>Are you sure you want to delete this team member?</p>
+            <form onSubmit={handleDeleteSubmit}>
+              <label>User Name</label>
+              <input
+                type="text"
+                name="userName"
+                value={deleteFormData.userName}
+                placeholder="User name"
+                disabled
+              />
 
-                <label>Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={deleteFormData.email}
-                  placeholder="Email ID"
-                  disabled
-                />
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                value={deleteFormData.email}
+                placeholder="Email ID"
+                disabled
+              />
 
-                <label>Designation</label>
-                <select
-                  name="designation"
-                  value={deleteFormData.designation}
-                  disabled
-                >
-                  <option value="admin">Admin</option>
-                  <option value="member">Member</option>
-                </select>
+              <label>Designation</label>
+              <select
+                name="designation"
+                value={deleteFormData.designation}
+                disabled
+              >
+                <option value="admin">Admin</option>
+                <option value="member">Member</option>
+              </select>
 
-                <div className="popupActions">
-                  <button type="button" onClick={handleDeleteCancel}>
-                    Cancel
-                  </button>
-                  <button type="submit">Delete</button>
-                </div>
-              </form>
-            </div>
+              <div className="popupActions">
+                <button type="button" onClick={handleDeleteCancel}>
+                  Cancel
+                </button>
+                <button type="submit">Delete</button>
+              </div>
+            </form>
           </div>
-        )
-      }
+        </div>
+      )}
     </div>
   );
 };

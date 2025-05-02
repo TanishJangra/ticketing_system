@@ -33,7 +33,7 @@ const ContactCenter = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/chats",
+        "https://ticketing-system-usx8.onrender.com/api/chats",
         {
           ticketId: activeTicket.id,
           sender: "admin",
@@ -71,7 +71,7 @@ const ContactCenter = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/tickets/${activeTicket.id}/status`,
+        `https://ticketing-system-usx8.onrender.com/api/tickets/${activeTicket.id}/status`,
         { status: "Resolved" },
         {
           headers: {
@@ -100,7 +100,7 @@ const ContactCenter = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/tickets/contactsCenter",
+          "https://ticketing-system-usx8.onrender.com/api/tickets/contactsCenter",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -189,7 +189,9 @@ const ContactCenter = () => {
                     <div className={`chatName ${chat.sender}contactCenter`}>
                       {chat.sender === "visitor" ? "Chat" : assignedTo.name}
                     </div>
-                    <div className={`msg ${chat.sender}contactCenter`}>{chat.message}</div>
+                    <div className={`msg ${chat.sender}contactCenter`}>
+                      {chat.message}
+                    </div>
                     {chat.sender === "visitor" && activeTicket.isMissed && (
                       <div className="missedChat">
                         <p>Replying to missed chat</p>

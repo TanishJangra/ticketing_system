@@ -15,11 +15,14 @@ const Settings = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/users/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const res = await axios.get(
+          "https://ticketing-system-usx8.onrender.com/api/users/profile",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
         const { firstName, lastName, email } = res.data;
         setFormData((prev) => ({
           ...prev,
@@ -55,7 +58,7 @@ const Settings = () => {
     try {
       const token = localStorage.getItem("token"); // Or use cookie
       await axios.put(
-        "http://localhost:5000/api/users/profile",
+        "https://ticketing-system-usx8.onrender.com/api/users/profile",
         { firstName, lastName, email, password },
         {
           headers: {
@@ -93,8 +96,13 @@ const Settings = () => {
             </div>
             <div className="inputBox">
               <label htmlFor="Lastname">Last name</label>
-              <input type="text" name="Lastname" id="Lastname" value={formData.lastName}
-              onChange={handleChange} />
+              <input
+                type="text"
+                name="Lastname"
+                id="Lastname"
+                value={formData.lastName}
+                onChange={handleChange}
+              />
             </div>
             <div className="inputBox">
               <label htmlFor="email">Email</label>

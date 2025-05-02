@@ -66,7 +66,7 @@ const SignUp = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://ticketing-system-usx8.onrender.com/api/auth/register",
         {
           firstName: formData.firstName,
           lastName: formData.lastName,

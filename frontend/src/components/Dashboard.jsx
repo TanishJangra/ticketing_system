@@ -59,7 +59,7 @@ const Dashboard = ({chatConfig}) => {
     try {
       const id = localStorage.getItem("visitorId");
       const createdTicket = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "https://ticketing-system-usx8.onrender.com/api/tickets",
         {
           visitorId: id,
           initialMessage: mssg,
@@ -85,7 +85,7 @@ const Dashboard = ({chatConfig}) => {
     };
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/visitors",
+        "https://ticketing-system-usx8.onrender.com/api/visitors",
         data
       );
       console.log(response.data);

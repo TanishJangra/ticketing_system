@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
   const fetchChatBoxUI = async () => {
     try {
-      const resp = await axios.get("http://localhost:5000/api/chatCustomization");
+      const resp = await axios.get("https://ticketing-system-usx8.onrender.com/api/chatCustomization");
       console.log("resp is : ", resp);
       setChatConfig(resp.data);
     } catch (error) {
