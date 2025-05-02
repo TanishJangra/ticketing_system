@@ -19,6 +19,12 @@ import videoIcon from "./../assets/videoIcon.png";
 import company_logo from "./../assets/company_logo.png";
 import axios from "axios";
 import logoImg from "./../assets/logoImg.png";
+import ImgSectionFirst from "./../assets/ImgSectionFirst.png"
+import barImg from "./../assets/barImg.png";
+import calendar from "./../assets/calendar.png";
+import downImg from "./../assets/downImg.png"
+import topImg from "./../src/assets/topImg.png";
+
 
 const Dashboard = ({chatConfig}) => {
   // console.log("data is ", chatConfig);
@@ -142,18 +148,18 @@ const Dashboard = ({chatConfig}) => {
           <div className="mainImg">
             <img
               className="rightImg"
-              src="./../src/assets/ImgSectionFirst.png"
+              src={ImgSectionFirst}
               alt="img"
             />
           </div>
 
           <img
             className="calendarImg"
-            src="./../src/assets/calendar.png"
+            src={calendar}
             alt="calendar"
           />
 
-          <img className="barImg" src="./../src/assets/barImg.png" alt="bar" />
+          <img className="barImg" src={barImg} alt="bar" />
         </div>
       </div>
       <div className="companyLogos">
@@ -180,7 +186,7 @@ const Dashboard = ({chatConfig}) => {
                 <img
                   className="img"
                   alt="Frame"
-                  src="./../src/assets/downImg.png"
+                  src={downImg}
                 />
 
                 <div className="headline">CAPTURE</div>
@@ -193,7 +199,7 @@ const Dashboard = ({chatConfig}) => {
               <img
                 className="dadcda-b"
                 alt="Dadcda b"
-                src="./../src/assets/topImg.png"
+                src={topImg}
               />
             </div>
 
