@@ -23,7 +23,7 @@ import ImgSectionFirst from "./../assets/ImgSectionFirst.png"
 import barImg from "./../assets/barImg.png";
 import calendar from "./../assets/calendar.png";
 import downImg from "./../assets/downImg.png"
-import topImg from "./../src/assets/topImg.png";
+import topImg from "./../assets/topImg.png";
 
 
 const Dashboard = ({chatConfig}) => {
